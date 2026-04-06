@@ -1,0 +1,22 @@
+juego.py
+import random
+
+def jugar():
+    print("--- ⚽ MANCHESTER PECHOFRIO UNIDOS ⚽ ---")
+    print("Minuto 90. Final de la copa contra Atretico de Autobus.")
+    print("FC Barrio tiene el balon. ¿Que haces?")
+    print("1. [A] Pase filtrado")
+    print("2. [B] El Zapatazo")
+    
+    opcion = input("Elige A o B: ").upper()
+    suerte = random.randint(1, 10)
+    
+    if opcion == "A" and suerte > 4:
+        print("¡GOLAZO! Asistencia perfecta de FC Barrio.")
+    elif opcion == "B" and suerte > 6:
+        print("¡POR LA ESCUADRA! ¡Campeones!")
+    else:
+        print("¡Al palo! El Pechofrio lo hizo otra vez...")
+
+jugar()
+
